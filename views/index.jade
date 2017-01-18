@@ -7,11 +7,11 @@ block content
         br
         small Created for FreeCodeCamp
   section.container
-    form(action="get-file-size" method="post" enctype="multipart/form-data")
+    form.inline-form(action="get-file-size" method="post" enctype="multipart/form-data")
       .form-group.row  
-        label.col-xs-12.col-sm-2.col-form-label(for="form") Select File
+        .col-xs-12.col-sm-2
+          label.col-form-label(for="form") Choose a file:
         .col-xs-12.col-sm-4
           input.form-control(type="file" name="file")
-      .form-group.row
-        .col-xs-6.col-sm-offset-2.col-sm-4
-          button.btn.btn-primary(type="submit") Submit
+        .col-xs-12.col-sm-4
+          button.btn.btn-primary.pull-left(type="submit") Submit
